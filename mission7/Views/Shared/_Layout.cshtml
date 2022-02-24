@@ -4,20 +4,19 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"] - mission7</title>
-    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="~/css/site.css" />
     <link href="~/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+
 </head>
 <body>
 
-    <div class="bg-light text-dark p-2">
+    <div class="bg-dark text-light p-2">
         <span class="navbar-brand m-lg-2">Online Bookstore</span>
     </div>
 
     <div class="row m-1 p-1">
 
         <div id="types" class="col-4">
-            Books Currently Available -->
+            <vc:types></vc:types>
         </div>
 
         <div class="col-8">

@@ -6,35 +6,11 @@
 @model BooksViewModel
 
 
-
 @foreach (Book b in Model.Books)
-    {
-        <!--Style with bootstrap-->
-        <div class="card card-outline-primary m-1 p-1"> 
+{
+    <partial name="ProjectSummary" model="b"/>
+}
 
-            <!--Title-->
-            <div class="bg-light p-1">
-                <h5>Title: @b.Title</h5>
-
-                <!--Price-->
-                <span class="badge bg-info" style="float:right">
-                    Buy Now: $@b.Price
-                </span>
-
-            </div>
-
-            <!--List of remaining categories-->
-            <ul>
-                <li>Author: @b.Author</li>
-                <li>Publisher: @b.Publisher</li>
-                <li>ISBN: @b.Isbn Served</li>
-                <li>Classification: @b.Classification</li>
-                <li>Category: @b.Category</li>
-                <li>Number of Pages: @b.PageCount</li>
-            </ul>
-        </div>
-            <br />
-    }
-
-    <!--Tag Helper-->
-    <div page-blah="@Model.PageInfo" page-action="Index"></div>
+<!--Tag Helper-->
+<div page-blah="@Model.PageInfo" page-action="Index" page-class="btn" 
+     page-class-normal="btn-outline-dark" page-class-selected="btn-primary" page-classes-enabled="true" class="btn-group pull-right m-1"></div>

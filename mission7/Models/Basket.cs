@@ -57,5 +57,6 @@ namespace mission7.Models
         public Book Book { get; set; }
         public int Quantity { get; set; }
         public float Price { get; set; }
+        
     }
 }

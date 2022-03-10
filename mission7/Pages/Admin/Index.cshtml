@@ -1,0 +1,25 @@
+﻿@page "/admin"
+
+@model mission7.Pages.Admin.IndexModel
+
+@{
+}
+
+<!--Shared Layout for Razor Pages-->
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Online Bookstore Admin</title>
+    <link href="~/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <base href="/" />
+</head>
+
+<body>
+
+    <component type="typeof(mission7.Pages.Admin.Routed)" render-mode="Server" />
+    <script src="/_framework/blazor.server.js"></script>
+
+</body>
+
+</html>

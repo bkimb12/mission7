@@ -8,6 +8,7 @@ using System.Threading.Tasks;
 
 namespace mission7.Controllers
 {
+    //Add Account controller to work with Account View Folder
     public class AccountController : Controller
     {
 
